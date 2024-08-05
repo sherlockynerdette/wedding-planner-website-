@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMasterPage.master.cs" Inherits="Live.Love.Wed.AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Live.Love.Wed</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <link href="css/Custom.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color: plum">
+    <form id="form1" runat="server">
+        <div>
+             <!---Navbar start--->
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="WebForm1.aspx" 
+                            style="background-color: HighlightText; font-family: 'Maiandra GD'; font-size: x-large;"><span><img src="icons/logo.jpg"alt="Live.Love.Wed" height="30" /></span>Live.Love.Wed</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="WebForm1.aspx">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                           <%--- <li class="dropdown">
+                                <a href="#" class="dropdown.toggle" data-toggle="dropdown">Our Services<b 
+                                    class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Venues.aspx">Venues</a></li>
+                                    <li><a href="Themes.aspx">Themes</a></li>
+                                    <li><a href="Costumes.aspx">Costumes</a></li>
+                                    <li><a href="Photographers.aspx">Photographers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Our Packages</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="Register.aspx">Register</a></li>
+                            <li class ="active"><a href="Login.aspx">Login</a></li>
+                           </ul> ---%>
+
+                            <li class ="drodown">
+                            <a href ="#" class ="dropdown-toggle" data-toggle="dropdown">Products<b class ="caret"></b></a>
+                            <ul class ="dropdown-menu ">
+                                
+                                <li> <a href ="AddServices.aspx">Add Service</a></li>
+                               
+                            </ul>
+
+                        </li>
+
+                        <li class ="drodown" >
+                                     <a href ="#" class ="dropdown-toggle" data-toggle="dropdown">Manage <b class ="caret"></b></a> 
+                                     <ul class ="dropdown-menu">
+                                         <li ><a href ="AddCategory.aspx">Add Category</a> </li>
+                                         <li ><a href ="SubCategory.aspx">Add Sub-Category</a> </li>
+                                       
+                                         <li role="separator" class ="divider "></li> 
+                                         <li ><a href ="EditCategory.aspx">Edit Category</a> </li>
+                                         <li ><a href="EditSubCategory.aspx">Edit Sub-Category</a> </li>
+                                         
+                                         <li role="separator" class ="divider "></li> 
+                                         <li ><a href="Report.aspx">Report</a> </li>
+                                      </ul>
+                        </li>
+
+                            <li ><a href ="#">Manage</a> </li>
+
+                            <li >
+                            <asp:Button ID="btnAdminlogout" CssClass ="btn btn-default navbar-btn " runat="server" Text="Sign Out"  />
+                        </li>
+                            </ul>
+
+                    </div>
+                </div>
+            </div>
+            <!---navbar end--->
+
+        <div>
+            <div class ="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+     <!---footer contents start here--->
+
+        <footer>
+            <div class ="container">
+                <p class ="pull-right "><a href="#"> User Login  </a></p>
+                <p class ="pull-right"><a href="#"> Back to top</a></p>
+                <p>&copy;Live.Love.Wed &middot; 
+                    <a href ="Default.aspx">Home</a>&middot;
+                    <a href ="#">Home</a>&middot;
+                    <a href ="#">About</a>&middot;
+                    <a href ="#">Contact</a>&middot; href ="#">
+                </p>
+            </div>
+
+
+        </footer>
+
+
+        <!---footer contents end--->
+</body>
+</html>

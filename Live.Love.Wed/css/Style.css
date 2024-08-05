@@ -1,0 +1,82 @@
+﻿body {
+}
+
+.logo {
+    width: 100px;
+    font-family: 'Maiandra GD';
+}
+
+.mt-70 {
+    margin-top: 80px;
+    font-family: 'Maiandra GD';
+}
+
+.footer-p {
+    font-size: initial;
+    font-family: 'Maiandra GD';
+}
+
+.footer-top {
+    position: relative;
+    bottom: -23px;
+    padding: 16px 0px;
+    margin: 10px 0px;
+    /* background-color: black;*/
+    color: white;
+    left: 6px;
+    font-family: 'Maiandra GD';
+}
+
+.nav, .navbar-nav {
+    margin-top: 17px;
+    font-family: 'Maiandra GD';
+}
+
+.box {
+    border: 1px solid #bdb2b2;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    margin-top: 30px;
+    font-family: 'Maiandra GD';
+}
+
+.center {
+    text-align: center;
+    font-family: 'Maiandra GD';
+}
+
+.left {
+    text-align: left;
+    font-family: 'Maiandra GD';
+}
+
+#social_side_links {
+    position: fixed;
+    bottom: 19%;
+    right: -8px;
+    padding: 0px;
+    list-style: none;
+    z-index: 99;
+    font-family: 'Maiandra GD';
+}
+
+    #social_side_links li a {
+        display: block;
+        font-family: 'Maiandra GD';
+    }
+
+        #social_side_links li a img {
+            display: block;
+            max-width: 100%;
+            padding: 7px;
+            -webkit-transition: background .2s ease-in-out;
+            -moz-transition: background .2s ease-in-out;
+            -o-transition: background .2s ease-in-out;
+            transition: background .2s ease-in-out;
+            font-family: 'Maiandra GD';
+        }
+
+        #social_side_links li a:hover img {
+            background: rgba(0, 0, 0, .2);
+            font-family: 'Maiandra GD';
+        }
